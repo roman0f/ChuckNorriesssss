@@ -1,0 +1,6 @@
+.Button{
+    background-color: orange;
+}
+.Button.disabled{
+    background-color: red;
+}
