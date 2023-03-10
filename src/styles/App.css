@@ -4,4 +4,8 @@
 }
 body{
   background-color: #D5DDBC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

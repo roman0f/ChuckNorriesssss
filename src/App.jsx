@@ -7,18 +7,27 @@ import TitleAndSub from './components/TitleAndSub'
 function App() {
   const [count, setCount] = useState(0)
   const [joke, setJoke] = useState("")
+  const [category,loadcategory] = useState([])
+
 
   function loadJoke(){
-    console.log('carica joke')
-  }
+    
+    fetch('https://api.chucknorris.io/jokes/random').then(
+      response => response.json()
+    ).then(
+      data => {
+        setJoke(data.value);
+      }
+    )
 
-  function loadJoke(){
-    console.log('carica joke')
+
+    
   }
 
   return (
     <div className="App">
-      <TitleAndSub /> 
+      <TitleAndSub/> 
+      
       {/* <Button 
       
       content="Ciao"
