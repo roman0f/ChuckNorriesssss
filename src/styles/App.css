@@ -6,8 +6,18 @@
   background-color: #D5DDBC;
   display: flex;
   flex-direction: column;
-  
   align-items: center;
   width: 100vw;
   height: 100vh;
+}
+
+.imageChuck{
+  display: none;
+}
+
+@media screen and (min-width: 394px) {
+  .imageChuck{
+    display: inline-block;
+  }
+  
 }
