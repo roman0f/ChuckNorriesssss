@@ -8,8 +8,18 @@ import DropDown from './components/Dropdown'
 function App() {
   const [count, setCount] = useState(0)
   const [joke, setJoke] = useState("")
-  const [category,loadcategory] = useState([])
+  const [category,setcategory] = useState([])
+  
 
+  function loadcategory(){
+    fetch("https://api.chucknorris.io/jokes/categories").then(
+      response => response.json()
+    ).then(
+      data=> {
+        setcategory(data)
+      }
+    )
+  }
 
   function loadJoke(){
     
@@ -25,6 +35,8 @@ function App() {
     
   }
 
+  console.log(category)
+
   return (
     <div className="App">
       <TitleAndSub/> 
@@ -32,6 +44,7 @@ function App() {
       <div className="imageChuck">
         <img src={chuckimg} alt="ChuckNorriesPotentissimo"/>
       </div>
+      {loadcategory()}
 
       <DropDown/>
       
