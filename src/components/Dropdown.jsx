@@ -1,10 +1,9 @@
 import '../styles/DropDown.css'
 
 function DropDown({category}) {
-  console.log(typeof(category))
   return (
     <div className="DropDown">
-       
+       <select name="categories" id="categorisid"></select>
     </div>
   )
 }

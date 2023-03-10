@@ -4,6 +4,7 @@ import './styles/App.css'
 import Button from './components/Button'
 import TitleAndSub from './components/TitleAndSub'
 import chuckimg from './assets/chuck.png'
+import DropDown from './components/Dropdown'
 function App() {
   const [count, setCount] = useState(0)
   const [joke, setJoke] = useState("")
@@ -31,6 +32,8 @@ function App() {
       <div className="imageChuck">
         <img src={chuckimg} alt="ChuckNorriesPotentissimo"/>
       </div>
+
+      <DropDown/>
       
       {/* <Button 
       
