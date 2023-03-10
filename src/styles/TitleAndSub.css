@@ -2,5 +2,9 @@ h1#Titolonissimo{
     font-size: 50px;
     color: #000;
     text-align: center;
+    padding: 38px 0px 31px 0px;
+}
 
+h6#subtitle{
+    padding-bottom: 115px;
 }
