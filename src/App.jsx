@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './styles/App.css'
 import Button from './components/Button'
+import TitleAndSub from './components/TitleAndSub'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,8 @@ function App() {
 
   return (
     <div className="App">
-      <Button 
+      <TitleAndSub /> 
+      {/* <Button 
       
       content="Ciao"
       variant="Normal"
@@ -27,7 +29,7 @@ function App() {
       
       content="Ciao"
       variant={joke === "" ? "disabled" : ""}
-      />
+      /> */}
     </div>
   )
 }
