@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import './styles/App.css'
 import Button from './components/Button'
 import TitleAndSub from './components/TitleAndSub'
-
+import chuckimg from './assets/chuck.png'
 function App() {
   const [count, setCount] = useState(0)
   const [joke, setJoke] = useState("")
@@ -27,6 +27,10 @@ function App() {
   return (
     <div className="App">
       <TitleAndSub/> 
+      
+      <div className="imageChuck">
+        <img src={chuckimg} alt="ChuckNorriesPotentissimo"/>
+      </div>
       
       {/* <Button 
       

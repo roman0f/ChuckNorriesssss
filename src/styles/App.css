@@ -2,10 +2,12 @@
   margin:0;
   padding: 0;
 }
-body{
+.App{
   background-color: #D5DDBC;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  
   align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
