@@ -1,7 +1,20 @@
 .Button{
     background-color: #931F1D;
+    padding: 16px 70px;
 }
 .Button.disabled{
-    background-color: red;
+    background-color: #AA9190;
 }
+
+.text-center{
+    text-align: center;
+}
+
+@media screen and (min-width: 394px) {
+    .Button {
+        padding: 16px 158px;
+        
+    }
+    
+  }
 

@@ -1,4 +1,4 @@
-import '../styles/Button.css'
+import '../styles/button.css'
 
 function Button({content, variant, clbk}) {
     function rendeClasses(){
