@@ -12,13 +12,22 @@ function App() {
   
 
   function loadcategory(){
-    fetch("https://api.chucknorris.io/jokes/categories").then(
+    if(category.length === 0){
+      fetch("https://api.chucknorris.io/jokes/categories").then(
       response => response.json()
     ).then(
-      data=> {
-        setcategory(data)
+      data=>{
+        let obj = data.map(function(item, index){
+          return {
+            id: index,
+            value: item,
+            label: item.charAt(0).toUpperCase() + item.slice(1)
+          }
+        })
+        setcategory(obj)
       }
     )
+    }
   }
 
   function loadJoke(){
@@ -44,9 +53,7 @@ function App() {
       <div className="imageChuck">
         <img src={chuckimg} alt="ChuckNorriesPotentissimo"/>
       </div>
-      {loadcategory()}
-
-      <DropDown/>
+      <DropDown category={category} clbk={loadcategory} />
       
       {/* <Button 
       
