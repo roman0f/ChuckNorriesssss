@@ -55,17 +55,15 @@ function App() {
       </div>
       <DropDown category={category} clbk={loadcategory} />
       
-      {/* <Button 
+       <Button 
       
-      content="Ciao"
+      content="CARICA JOKE"
       variant="Normal"
-      
       />
       <Button 
-      
-      content="Ciao"
+      content="COPIA TESTO"
       variant={joke === "" ? "disabled" : ""}
-      /> */}
+      /> 
     </div>
   )
 }
