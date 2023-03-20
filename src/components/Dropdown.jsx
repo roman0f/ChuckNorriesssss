@@ -13,7 +13,7 @@ function DropDown({category, clbk}) {
   return (
     <div className="DropDown">
        <select name="categories" id="categorisid">
-        <option value="">"Scegli una opzione"</option>
+        <option value="" hidden >"Scegli una opzione"</option>
         {category.map((category) => 
         <option key={category.id} value={category.value}>{category.label}</option>
         )}
