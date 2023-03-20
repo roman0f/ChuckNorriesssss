@@ -9,6 +9,7 @@ function App() {
   const [count, setCount] = useState(0)
   const [joke, setJoke] = useState("")
   const [category,setcategory] = useState([])
+  const [selection,setselection] = useState("")
   
 
   function loadcategory(){
@@ -54,6 +55,8 @@ function App() {
         <img src={chuckimg} alt="ChuckNorriesPotentissimo"/>
       </div>
       <DropDown category={category} clbk={loadcategory} />
+
+
       
        <Button 
       
