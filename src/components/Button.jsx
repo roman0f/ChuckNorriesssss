@@ -10,7 +10,7 @@ function Button({content, variant, clbk, style}) {
     }
   return (
     <div className="buttons">
-        <button className={rendeClasses()} content={content}>{content}</button>
+        <button className={rendeClasses()} content={content} onClick={clbk}>{content}</button>
     </div>
   )
 }

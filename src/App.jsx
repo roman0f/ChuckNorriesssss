@@ -5,6 +5,7 @@ import Button from './components/Button'
 import TitleAndSub from './components/TitleAndSub'
 import chuckimg from './assets/chuck.png'
 import DropDown from './components/Dropdown'
+import Joke from './components/Joke'
 function App() {
   const [count, setCount] = useState(0)
   const [joke, setJoke] = useState("")
@@ -32,7 +33,7 @@ function App() {
   }
 
   function loadJoke(){
-    if(selection=""){
+    if(selection===""){
       fetch('https://api.chucknorris.io/jokes/random').then(
       response => response.json()
     ).then(
@@ -57,8 +58,6 @@ function App() {
     
   }
 
-  console.log(category)
-
   return (
     <div className="App">
       <TitleAndSub/> 
@@ -68,11 +67,10 @@ function App() {
       </div>
       <DropDown category={category} clbk={loadcategory} />
 
-      {joke != "" && 
-      https://api.chucknorris.io/jokes/random?category={category}
-
+      {joke != "" &&
+      
+      <Joke joke={joke} />
       }
-
 
       
        <Button 
@@ -80,6 +78,7 @@ function App() {
       content="CARICA JOKE"
       variant="Normal"
       style="spacebtn"
+      clbk={() => loadJoke()}
       />
       <Button 
       content="COPIA TESTO"
