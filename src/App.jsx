@@ -68,6 +68,11 @@ function App() {
       </div>
       <DropDown category={category} clbk={loadcategory} />
 
+      {joke != "" && 
+      https://api.chucknorris.io/jokes/random?category={category}
+
+      }
+
 
       
        <Button 
