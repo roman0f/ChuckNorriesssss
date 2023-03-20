@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import '../styles/DropDown.css'
 
-function DropDown({category, clbk}) {
+function DropDown({category, clbk, handler}) {
 
   useEffect(clbk, [])
 
@@ -10,9 +10,16 @@ function DropDown({category, clbk}) {
     return classes.join(" ")
   }
 
+  function handleChange(e){
+    if(handler!= undefined){
+      handler(e.currentTarget.value)
+    }
+    
+  }
+
   return (
     <div className="DropDown">
-       <select name="categories" id="categorisid">
+       <select name="categories" id="categorisid" onChange={handleChange}>
         <option value="" hidden >"Scegli una opzione"</option>
         {category.map((category) => 
         <option key={category.id} value={category.value}>{category.label}</option>

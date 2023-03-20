@@ -58,6 +58,11 @@ function App() {
     
   }
 
+  function categoryhandler(e){
+    setselection(e)
+
+  }
+
   return (
     <div className="App">
       <TitleAndSub/> 
@@ -65,7 +70,7 @@ function App() {
       <div className="imageChuck">
         <img src={chuckimg} alt="ChuckNorriesPotentissimo"/>
       </div>
-      <DropDown category={category} clbk={loadcategory} />
+      <DropDown category={category} clbk={loadcategory} handler={categoryhandler}/>
 
       {joke != "" &&
       
