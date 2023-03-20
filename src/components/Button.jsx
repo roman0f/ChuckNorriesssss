@@ -1,9 +1,9 @@
 import '../styles/button.css'
 
-function Button({content, variant, clbk}) {
+function Button({content, variant, clbk, style}) {
     function rendeClasses(){
         let classes = [
-        'Button', 'text-center','spacebtn', variant
+        'Button', 'text-center', variant, style
         ]
 
         return classes.join(" ")

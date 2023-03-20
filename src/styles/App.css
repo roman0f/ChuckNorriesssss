@@ -3,12 +3,15 @@
   padding: 0;
 }
 .App{
-  background-color: #D5DDBC;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   height: 100vh;
+}
+body{
+  background-color: #D5DDBC;
 }
 
 .imageChuck{

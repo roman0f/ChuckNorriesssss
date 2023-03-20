@@ -59,6 +59,7 @@ function App() {
       
       content="CARICA JOKE"
       variant="Normal"
+      style="spacebtn"
       />
       <Button 
       content="COPIA TESTO"
