@@ -63,6 +63,14 @@ function App() {
 
   }
 
+  function copy(){
+    if(joke != ""){
+      navigator.clipboard.writeText(joke)
+      alert("Testo copiato negli appunti con successo!(come io ho copiato la funzione da internet)")
+    }
+  }
+
+
   return (
     <div className="App">
       <TitleAndSub/> 
@@ -88,6 +96,7 @@ function App() {
       <Button 
       content="COPIA TESTO"
       variant={joke === "" ? "disabled" : ""}
+      clbk ={copy}
       /> 
     </div>
   )
