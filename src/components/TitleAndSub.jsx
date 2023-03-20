@@ -1,4 +1,5 @@
 import '../styles/TitleAndSub.css'
+import React from 'react';
 
 function TitleAndSub() {
   return (
