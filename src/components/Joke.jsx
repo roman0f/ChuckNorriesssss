@@ -3,7 +3,7 @@ import '../styles/Joke.css'
 
 const Joke = ({joke}) => {
   return (
-    <div>
+    <div className='JokeSium'>
       <p>{joke}</p>
     </div>
   )
