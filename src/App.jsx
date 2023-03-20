@@ -32,14 +32,26 @@ function App() {
   }
 
   function loadJoke(){
-    
-    fetch('https://api.chucknorris.io/jokes/random').then(
+    if(selection=""){
+      fetch('https://api.chucknorris.io/jokes/random').then(
       response => response.json()
     ).then(
       data => {
         setJoke(data.value);
       }
     )
+
+    }else{
+      fetch(`https://api.chucknorris.io/jokes/random?category=${selection}`).then(
+        response => response.json()
+      ).then(
+        data => {
+          setJoke(data.value);
+        }
+      )
+
+    }
+    
 
 
     
