@@ -1,8 +1,9 @@
 .Button{
     background-color: #931F1D;
     padding: 16px 70px;
-    color: white;
-    
+    color: #D5DDBC;
+    font-size: 20px;
+    border-radius: 1px;
 }
 .Button.disabled{
     background-color: #AA9190;
@@ -19,7 +20,7 @@
 }
 
 .maringsott{
-    margin-bottom: 0px;
+    margin-bottom: 40px;
     
 }
 
