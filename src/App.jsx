@@ -96,6 +96,7 @@ function App() {
       <Button 
       content="COPIA TESTO"
       variant={joke === "" ? "disabled" : ""}
+      style="maringsott"
       clbk ={copy}
       /> 
     </div>
