@@ -66,7 +66,7 @@ function App() {
   function copy(){
     if(joke != ""){
       navigator.clipboard.writeText(joke)
-      alert("Testo copiato negli appunti con successo!(come io ho copiato la funzione da internet)")
+      alert("Testo copiato negli appunti!(come io ho copiato la funzione da internet)")
     }
   }
 
