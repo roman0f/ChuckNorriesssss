@@ -55,7 +55,6 @@ function App() {
     
 
 
-    
   }
 
   function categoryhandler(e){
